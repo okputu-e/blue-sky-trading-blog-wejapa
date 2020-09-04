@@ -17,7 +17,7 @@
         <a href="register.php" class="btn">Join us!</a>
     </div>
     <div class="login_div">
-        <form action="<?php echo BASE_URL . 'index.php'; ?>" method="post">
+        <form action="<?php echo BASE_URL . '/index.php'; ?>" method="post">
             <h2>Login</h2>
             <?php include(ROOT_PATH . '/includes/errors.php') ?>
             <input type="text" name="username" placeholder="Username" value="<?php echo $username; ?>"
