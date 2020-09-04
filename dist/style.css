@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Source+Serif+Pro&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+/* HEADINGS DEFAULT */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #191923;
+  font-family: "Clicker Script", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin-left: 40px;
+}
+
+hr {
+  margin: 10px 0px;
+  opacity: .25;
+}
+
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+/* NAVBAR */
+.navbar {
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #05204A;
+}
+
+.navbar ul {
+  list-style-type: none;
+  float: right;
+}
+
+.navbar ul li {
+  float: left;
+  font-family: "Source Serif Pro", serif;
+}
+
+.navbar ul li a {
+  display: block;
+  color: #E1E2EF;
+  text-align: center;
+  padding: 28px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: #fffecb;
+  background-color: #9bbec7;
+}
+
+/* LOGO */
+.navbar .logo_div {
+  float: left;
+  padding-top: 5px;
+  padding-left: 40px;
+}
+
+.navbar .logo_div h1 {
+  color: #E1E2EF;
+  font-size: 3em;
+  letter-spacing: 5px;
+  font-weight: 100;
+}
+
+/* FOOTER */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #E1E2EF;
+  background-color: #05204A;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto 0px;
+  padding: 20px 0px;
+}
+
+/* FORM DEFAULTS */
+form h2 {
+  margin: 25px auto;
+  text-align: center;
+}
+
+form input {
+  width: 100%;
+  display: block;
+  padding: 13px 13px;
+  font-size: 1em;
+  margin: 5px auto 10px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: transparent;
+  border: 1px solid #3E606F;
+}
+
+form input:focus {
+  outline: none;
+}
+
+/* BUTTON DEFAULT */
+.btn {
+  color: white;
+  background: #05204A;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  letter-spacing: .1em;
+  margin: 10px 0px;
+  padding: 13px 20px;
+  text-decoration: none;
+}
+
+.hero {
+  margin: 5px auto;
+  min-height: 400px;
+  color: #E1E2EF;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #9bbec7), color-stop(50%, #05204A));
+  background: linear-gradient(to right, #9bbec7 50%, #05204A 50%);
+  background-size: 100% 100%;
+}
+
+.hero .welcome_msg {
+  width: 45%;
+  float: left;
+  padding: 20px;
+}
+
+.hero .welcome_msg h1 {
+  color: #05204A;
+  margin: 25px 0px;
+  font-size: 2.4em;
+}
+
+.hero .welcome_msg p {
+  color: #E1E2EF;
+  font-size: 1.5em;
+  line-height: 1.8em;
+  font-family: "Source Serif Pro", serif;
+}
+
+.hero .welcome_msg p span {
+  font-size: .81em;
+  color: #3E606F;
+}
+
+.hero .welcome_msg a {
+  width: 30%;
+  margin: 20px 0px;
+  padding: 12px 15px;
+  font-size: 1.2em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero .welcome_msg a:hover {
+  background: #9bbec7;
+  border: 1px solid #05204A;
+  color: #05204A;
+}
+
+.hero .login_div {
+  width: 50%;
+  float: left;
+}
+
+.hero .login_div form {
+  margin-top: 40px;
+}
+
+.hero .login_div form h2 {
+  color: #E1E2EF;
+  letter-spacing: 2px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.hero .login_div form input {
+  width: 60%;
+  color: #E1E2EF;
+  border: 1px solid #E1E2EF;
+  margin: 10px auto;
+  letter-spacing: 1.3px;
+  font-family: "Source Serif Pro", serif;
+}
+
+.hero .login_div form button {
+  display: block;
+  background: #9bbec7;
+  margin-left: 20%;
+  cursor: pointer;
+}
+
+.hero .login_div form button:hover {
+  background: #05204A;
+  border: 1px solid #9bbec7;
+  color: #9bbec7;
+}
+/*# sourceMappingURL=style.css.map */
