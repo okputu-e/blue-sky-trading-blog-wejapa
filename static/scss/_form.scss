@@ -1,0 +1,35 @@
+/* FORM DEFAULTS */
+form h2 {
+    margin: 25px auto;
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    display: block;
+    padding: 13px 13px;
+    font-size: 1em;
+    margin: 5px auto 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #3E606F;
+}
+
+form input:focus {
+    outline: none;
+}
+
+/* BUTTON DEFAULT */
+.btn {
+    color: white;
+    background: $oxford-blue;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    letter-spacing: .1em;
+    margin: 10px 0px;
+    padding: 13px 20px;
+    text-decoration: none;
+}
