@@ -104,6 +104,83 @@ hr {
     }
 }
 
+/* CONTENT */
+.content {
+    margin: 5px auto;
+    border-radius: 5px;
+    min-height: 400px;
+
+    .content-title {
+        margin: 10px 0px;
+        color: $oxford-blue;
+        font-family: $font-general;
+    }
+
+    .post {
+        width: 335px;
+        margin: 9px;
+        min-height: 320px;
+        float: left;
+        border-radius: 2px;
+        border: 1px solid $sky-blue;
+        position: relative;
+
+        .category {
+            margin-top: 0px;
+            padding: 3px 8px;
+            color: #374447;
+            background: white;
+            display: inline-block;
+            border-radius: 2px;
+            border: 1px solid #374447;
+            box-shadow: 3px 2px 2px;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            z-index: 3;
+
+            &:hover {
+                box-shadow: 3px 2px 2px;
+                color: white;
+                background: #374447;
+                transition: .4s;
+                opacity: 1;
+            }
+        }
+
+        .post_image {
+            height: 260px;
+            width: 100%;
+            background-size: 100%;
+        }
+
+        .post_info {
+            height: 100%;
+            padding: 0px 5px;
+            font-weight: 200;
+            color: $jet;
+
+            h3 {
+                font-family: $font-general;
+            }
+
+            span {
+                color: $jet;
+                font-style: italic;
+
+                &.read_more {
+                    position: absolute;
+                    right: 5px;
+                    bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
 
 
 
