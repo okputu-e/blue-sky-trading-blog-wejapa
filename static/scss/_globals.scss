@@ -197,3 +197,16 @@ hr {
     margin: 20px auto 0px;
     padding: 20px 0px;
 }
+
+//visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
