@@ -9,9 +9,7 @@ $body = "";
 $featured_image = "";
 $post_topic = "";
 
-/* - - - - - - - - - - 
--  Post functions
-- - - - - - - - - - -*/
+// Post functions
 // get all posts from DB
 function getAllPosts()
 {
