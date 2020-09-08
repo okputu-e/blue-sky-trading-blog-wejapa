@@ -6,11 +6,14 @@
 
 <body>
     <div class="container">
-        <!-- Navbar -->
-        <?php include( ROOT_PATH . '/includes/navbar.php'); ?>
-        <!-- // Navbar -->
+        <header class="header">
+            <!-- Navbar -->
+            <?php include( ROOT_PATH . '/includes/nav.php'); ?>
+            <!-- // Navbar -->
+        </header>
 
-        <div style="width: 40%; margin: 20px auto;">
+
+        <section class="content">
             <form method="post" action="login.php">
                 <h2>Login</h2>
                 <?php include(ROOT_PATH . '/includes/errors.php') ?>
@@ -21,10 +24,10 @@
                     Not yet a member? <a href="register.php">Sign up</a>
                 </p>
             </form>
-        </div>
+        </section>
     </div>
     <!-- // container -->
 
     <!-- Footer -->
-    <?php include( ROOT_PATH . '/includes/footer_section.php'); ?>
+    <?php include( ROOT_PATH . '/includes/footer.php'); ?>
     <!-- // Footer -->

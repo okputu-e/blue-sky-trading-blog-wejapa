@@ -1,0 +1,53 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: auto;
+
+
+    h2 {
+        color: $oxford-blue;
+        letter-spacing: 2px;
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    input {
+
+
+        &[type=text],
+        &[type=password],
+        &[type=email] {
+            outline: none;
+            width: 300px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid $oxford-blue;
+            font-size: 18px;
+            //background-color: transparent;
+        }
+
+
+        &[type=text]:focus,
+        &[type=password]:focus,
+        &[type=email]:focus {
+            border: 2px solid $oxford-blue;
+        }
+
+    }
+
+    button {
+        display: block;
+        background: $sky-blue;
+        cursor: pointer;
+        font-family: $font-general;
+        font-size: 15px;
+
+        &:hover {
+            background: $sky-blue;
+            color: $oxford-blue;
+        }
+    }
+}

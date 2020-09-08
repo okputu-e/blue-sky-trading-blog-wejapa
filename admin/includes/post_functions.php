@@ -87,7 +87,7 @@ function createPost($request_values)
 	  	$featured_image = $_FILES['featured_image']['name'];
 	  	if (empty($featured_image)) { array_push($errors, "Featured image is required"); }
 	  	// image file directory
-	  	$target = "../static/images/" . basename($featured_image);
+	  	$target = "../app/images/" . basename($featured_image);
 	  	if (!move_uploaded_file($_FILES['featured_image']['tmp_name'], $target)) {
 	  		array_push($errors, "Failed to upload image. Please check file settings for your server");
 	  	}

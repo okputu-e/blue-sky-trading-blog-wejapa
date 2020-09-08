@@ -9,11 +9,14 @@
 
 <body>
     <div class="container">
-        <!-- Navbar -->
-        <?php include( ROOT_PATH . '/includes/navbar.php'); ?>
-        <!-- // Navbar -->
+        <header class="header" id="header">
+            <!-- Navbar -->
+            <?php include( ROOT_PATH . '/includes/nav.php'); ?>
+            <!-- // Navbar -->
 
-        <div style="width: 40%; margin: 20px auto;">
+        </header>
+
+        <section class=" content">
             <form method="post" action="register.php">
                 <h2>Register on LifeBlog</h2>
                 <?php include(ROOT_PATH . '/includes/errors.php') ?>
@@ -26,9 +29,9 @@
                     Already a member? <a href="login.php">Sign in</a>
                 </p>
             </form>
-        </div>
+        </section>
     </div>
     <!-- // container -->
     <!-- Footer -->
-    <?php include( ROOT_PATH . '/includes/footer_section.php'); ?>
+    <?php include( ROOT_PATH . '/includes/footer.php'); ?>
     <!-- // Footer -->

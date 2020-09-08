@@ -31,7 +31,7 @@
                 <input type="text" name="title" value="<?php echo $title; ?>" placeholder="Title">
                 <label style="float: left; margin: 5px auto 5px;">Featured image</label>
                 <input type="file" name="featured_image">
-                <textarea name="body" id="body" cols="30" rows="10"><?php echo $body; ?></textarea>
+                <textarea name="body" id="body" cols="30" rows="10"><?php echo $_POST['body']; ?></textarea>
                 <select name="topic_id">
                     <option value="" selected disabled>Choose topic</option>
                     <?php foreach ($topics as $topic): ?>
