@@ -6,17 +6,19 @@
 	}
 	$topics = getAllTopics();
 ?>
-<?php include('includes/head_section.php'); ?>
+<?php include(ROOT_PATH . '/includes/head_section.php'); ?>
 <title> <?php echo $post['title']; ?> | LifeBlog</title>
 </head>
 
 <body>
     <div class="container">
-        <!-- Navbar -->
-        <?php include( ROOT_PATH . '/includes/navbar.php'); ?>
-        <!-- // Navbar -->
+        <header class="header" id="header">
+            <!-- Navbar -->
+            <?php include( ROOT_PATH . '/includes/nav.php'); ?>
+            <!-- // Navbar -->
+        </header>
 
-        <div class="content">
+        <section class="content">
             <!-- Page wrapper -->
             <div class="post-wrapper">
                 <!-- full post div -->
@@ -45,7 +47,7 @@
                     </div>
                     <div class="card-content">
                         <?php foreach ($topics as $topic): ?>
-                        <a href="<?php echo BASE_URL . '/filtered_posts.php?topic=' . $topic['id'] ?>">
+                        <a href="<?php echo BASE_URL . '/filtered_posts.php?topic=' . $topic['id']; ?>">
                             <?php echo $topic['name']; ?>
                         </a>
                         <?php endforeach ?>
@@ -53,8 +55,8 @@
                 </div>
             </div>
             <!-- // post sidebar -->
-        </div>
+        </section>
     </div>
     <!-- // content -->
 
-    <?php include( ROOT_PATH . '/includes/footer_section.php'); ?>
+    <?php include( ROOT_PATH . '/includes/footer.php'); ?>

@@ -13,9 +13,12 @@
 
 <body>
     <div class="container">
-        <!-- Navbar -->
-        <?php include( ROOT_PATH . '/includes/navbar.php'); ?>
-        <!-- // Navbar -->
+        <header class="header">
+            <!-- Navbar -->
+            <?php include( ROOT_PATH . '/includes/nav.php'); ?>
+            <!-- // Navbar -->
+        </header>
+
         <!-- content -->
         <div class="content">
             <h2 class="content-title">
@@ -24,7 +27,7 @@
             <hr>
             <?php foreach ($posts as $post): ?>
             <div class="post" style="margin-left: 0px;">
-                <img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
+                <img src="<?php echo BASE_URL . '/app/images/' . $post['image']; ?>" class="post_image" alt="">
                 <a href="single_post.php?post-slug=<?php echo $post['slug']; ?>">
                     <div class="post_info">
                         <h3><?php echo $post['title'] ?></h3>
@@ -42,5 +45,5 @@
     <!-- // container -->
 
     <!-- Footer -->
-    <?php include( ROOT_PATH . '/includes/footer_section.php'); ?>
+    <?php include( ROOT_PATH . '/includes/footer.php'); ?>
     <!-- // Footer -->

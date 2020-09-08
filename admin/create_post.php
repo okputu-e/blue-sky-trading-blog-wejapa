@@ -19,7 +19,7 @@
         <div class="action create-post-div">
             <h1 class="page-title">Create/Edit Post</h1>
             <form method="post" enctype="multipart/form-data"
-                action="<?php echo BASE_URL . 'admin/create_post.php'; ?>">
+                action="<?php echo BASE_URL . '/admin/create_post.php'; ?>">
                 <!-- validation errors for the form -->
                 <?php include(ROOT_PATH . '/includes/errors.php') ?>
 
@@ -31,7 +31,7 @@
                 <input type="text" name="title" value="<?php echo $title; ?>" placeholder="Title">
                 <label style="float: left; margin: 5px auto 5px;">Featured image</label>
                 <input type="file" name="featured_image">
-                <textarea name="body" id="body" cols="30" rows="10"><?php echo $body; ?></textarea>
+                <textarea name="body" id="body" cols="30" rows="10"><?php echo $_POST['body']; ?></textarea>
                 <select name="topic_id">
                     <option value="" selected disabled>Choose topic</option>
                     <?php foreach ($topics as $topic): ?>
