@@ -1,12 +1,14 @@
 <?php  include('config.php'); ?>
 <?php  include('includes/registration_login.php'); ?>
 <?php  include('includes/head_section.php'); ?>
-<title>LifeBlog | Sign in </title>
+
+<title>BlueSky | Sign in </title>
 </head>
 
 <body>
     <div class="container">
-        <header class="header">
+        <header class="header" id="header">
+            <div class="overlay has-fade"></div>
             <!-- Navbar -->
             <?php include( ROOT_PATH . '/includes/nav.php'); ?>
             <!-- // Navbar -->
@@ -22,6 +24,8 @@
                 <button type="submit" class="btn" name="login_btn">Login</button>
                 <p>
                     Not yet a member? <a href="register.php">Sign up</a>
+                    <br>
+                    <a href="enter_email.php">Forgot your password?</a>
                 </p>
             </form>
         </section>

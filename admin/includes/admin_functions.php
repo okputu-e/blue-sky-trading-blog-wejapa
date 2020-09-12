@@ -293,3 +293,12 @@ function deleteTopic($topic_id) {
 		exit(0);
 	}
 }
+
+  function isLoggedIn()
+    {
+        if (isset($_SESSION['user'])) {
+            return true;
+        }else{
+            return false;
+        }
+    }
