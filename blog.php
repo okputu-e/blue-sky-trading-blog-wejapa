@@ -28,7 +28,7 @@
                         </p>
                         <div class="flex">
                             <a href="register.php" class="btn">Join us!</a>
-                            <a href="Login.php" class="btn">Login In</a>
+                            <a href="login.php" class="btn">Login In</a>
                         </div>
 
                     </div>
