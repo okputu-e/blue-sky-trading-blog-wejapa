@@ -10,15 +10,16 @@
 <body>
     <div class="container">
         <header class="header" id="header">
+            <div class="overlay has-fade"></div>
             <!-- Navbar -->
             <?php include( ROOT_PATH . '/includes/nav.php'); ?>
             <!-- // Navbar -->
 
         </header>
 
-        <section class=" content">
+        <section class="content">
             <form method="post" action="register.php">
-                <h2>Register on LifeBlog</h2>
+                <h2>Register on BlueSky</h2>
                 <?php include(ROOT_PATH . '/includes/errors.php') ?>
                 <input type="text" name="username" value="<?php echo $username; ?>" placeholder="Username">
                 <input type="email" name="email" value="<?php echo $email ?>" placeholder="Email">

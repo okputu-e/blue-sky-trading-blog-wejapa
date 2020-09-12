@@ -3,8 +3,16 @@
 <?php 
 	// Get all admin users from DB
 	$admins = getAdminUsers();
-	$roles = ['Admin', 'Author'];				
+	$roles = ['Admin', 'Author'];
+
+
+    if (!isLoggedIn()) {
+    $_SESSION['msg'] = "You must log in first";
+    header('location: ../login.php');
+    } 
+				
 ?>
+
 <?php include(ROOT_PATH . '/admin/includes/head_section.php'); ?>
 <title>Admin | Manage users</title>
 </head>

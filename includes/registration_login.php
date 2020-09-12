@@ -48,16 +48,16 @@
 			$_SESSION['user'] = getUserById($reg_user_id);
 
 			// if user is admin, redirect to admin area
-			if ( in_array($_SESSION['user']['role'], ["Admin", "Author"])) {
+			if ($_SESSION['user'] !== null) {
 				$_SESSION['message'] = "You are now logged in";
 				// redirect to admin area
 				header('location: ' . BASE_URL . '/admin/dashboard.php');
-				exit(0);
+				die(0);
 			} else {
-				$_SESSION['message'] = "You are now logged in";
+				//$_SESSION['message'] = "You are now logged in";
 				// redirect to public area
-				header('location: ' . BASE_URL . '/admin/dashboard.php');				
-				exit(0);
+				header('location: ' . BASE_URL . '/login.php');				
+				die(0);
 			}
 		}
 	}

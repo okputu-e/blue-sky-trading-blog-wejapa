@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Source+Serif+Pro&display=swap");
-
 :root {
   --iris-blue: #5448c8;
   --sky-blue: #9bbec7;
@@ -14,9 +13,9 @@
   --raisin: #191923;
   --rich-black: #073b3a;
   --font-header: 'Clicker Script',
-    cursive;
+        cursive;
   --font-general: 'Source Serif Pro',
-    serif;
+        serif;
 }
 
 * {
@@ -57,7 +56,7 @@ form textarea {
   margin: 5px auto 10px;
   border-radius: 3px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   background: transparent;
   border: 1px solid var(--oxford-blue);
 }
@@ -227,7 +226,7 @@ th {
 .container.content .menu .card .card-content a {
   display: block;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 8px 10px;
   border-bottom: 1px solid var(--lavender);
   color: var(--jet);
@@ -320,5 +319,4 @@ th {
   text-align: left;
   margin-left: 10px;
 }
-
 /*# sourceMappingURL=admin_style.css.map */
