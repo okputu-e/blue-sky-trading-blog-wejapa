@@ -133,7 +133,7 @@
             // Send email to user with the token in a link they can click on
             $to = $email;
             $subject = "Reset your password on bluesky-blog-wejapa.herokuapp.com";
-            $msg = "Hi there, click on this <a href=\"new_pass.php?token=" . $token . "\">link</a> to reset your password on our site";
+            $msg = "Hi there, click on this :https://bluesky-blog-wejapa.herokuapp.com/new_pass.php?token=$token to reset your password on our site";
             $msg = wordwrap($msg,70);
             $headers = "From: info@bluesky-blog-wejapa.herokuapp.com";
             mail($to, $subject, $msg, $headers);
