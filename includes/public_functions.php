@@ -160,7 +160,7 @@
             $new_pass = md5($new_pass);
             $sql = "UPDATE users SET password='$new_pass' WHERE email='$email'";
             $results = mysqli_query($conn, $sql);
-            header('location: index.php');
+            header('location: login.php');
             }
         }
         }
