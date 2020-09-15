@@ -12,8 +12,8 @@
   }
  
     define('ROOT_PATH', realpath(dirname(__FILE__)));
-    //define('BASE_URL', 'https://bluesky-blog-wejapa.herokuapp.com');
-    define('BASE_URL', 'http://localhost/blue-sky-trading-blog-wejapa');
+    define('BASE_URL', 'https://bluesky-blog-wejapa.herokuapp.com');
+    //define('BASE_URL', 'http://localhost/blue-sky-trading-blog-wejapa');
     
 
 ?>
