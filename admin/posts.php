@@ -33,11 +33,11 @@ if (!isLoggedIn()) {
             <table class="table">
                 <thead>
                     <th>N</th>
-                    <th>Title</th>
                     <th>Author</th>
+                    <th>Title</th>
                     <th>Views</th>
                     <!-- Only Admin can publish/unpublish post -->
-                    <th><small>Publish</small></th>
+                    <!--<th><small>Publish</small></th>-->
                     <th><small>Edit</small></th>
                     <th><small>Delete</small></th>
                 </thead>
@@ -56,15 +56,15 @@ if (!isLoggedIn()) {
 
                         <!-- Only Admin can publish/unpublish post -->
 
-                        <td>
-                            <?php if ($post['published'] == true): ?>
-                            <a class="fa fa-check btn unpublish" href="posts.php?unpublish=<?php echo $post['id'] ?>">
+                        <!-- <td>
+                            <php if ($post['published'] == true): ?>
+                            <a class="fa fa-check btn unpublish" href="posts.php?unpublish=<php echo $post['id'] ?>">
+                            </a> 
+                            <php else: ?>
+                            <a class="fa fa-times btn publish" href="posts.php?publish=<php echo $post['id'] ?>">
                             </a>
-                            <?php else: ?>
-                            <a class="fa fa-times btn publish" href="posts.php?publish=<?php echo $post['id'] ?>">
-                            </a>
-                            <?php endif ?>
-                        </td>
+                            <php endif 
+                        </td>-->
 
 
                         <td>

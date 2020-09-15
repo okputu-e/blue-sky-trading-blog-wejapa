@@ -1,7 +1,6 @@
 <?php  include('../config.php'); ?>
 <?php include(ROOT_PATH . '/admin/includes/admin_functions.php'); ?>
 
-
 <?php
 if (!isLoggedIn()) {
 	$_SESSION['msg'] = "You must log in first";
@@ -45,7 +44,7 @@ if (!isLoggedIn()) {
         </div>
         <br><br><br>
         <div class="buttons">
-            <a href="users.php">Add Users</a>
+            <!--<a href="users.php">Add Users</a>-->
             <a href="posts.php">Add Posts</a>
         </div>
     </div>
